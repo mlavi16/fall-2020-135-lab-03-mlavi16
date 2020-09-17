@@ -1,4 +1,3 @@
-
 main: main.o reservoir.o
 	g++ -o main main.o reservoir.o
 
@@ -10,3 +9,9 @@ reservoir.o: reservoir.cpp reservoir.h
 
 clean:
 	rm -f main.o reservoir.o
+
+help:
+	@echo Targets:
+	@echo " main"
+	@echo " clean"
+
