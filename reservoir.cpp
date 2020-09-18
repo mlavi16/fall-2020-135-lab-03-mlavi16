@@ -6,7 +6,7 @@
 
 #include "reservoir.h"
 
-double get_east_storage(std::string entered_date){
+double get_east_storage(std::string entered_date) {
   std::ifstream fin("Current_Reservoir_Levels.tsv");
   if (fin.fail()) {
     std::cerr << "File cannot be opened for reading." << std::endl;
@@ -28,11 +28,11 @@ double get_east_storage(std::string entered_date){
     }
   }
   fin.close();
-  std::cout << "Invalid date" << std::endl;
+  std::cout << "Invalid date. Please enter 'MM/DD/2018'." << std::endl;
   return 0;
 }
 
-double get_min_east(){
+double get_min_east() {
   std::ifstream fin("Current_Reservoir_Levels.tsv");
   if (fin.fail()) {
     std::cerr << "File cannot be opened for reading." << std::endl;
@@ -61,7 +61,7 @@ double get_min_east(){
   return min;
 }
 
-double get_max_east(){
+double get_max_east() {
   std::ifstream fin("Current_Reservoir_Levels.tsv");
   if (fin.fail()) {
     std::cerr << "File cannot be opened for reading." << std::endl;
