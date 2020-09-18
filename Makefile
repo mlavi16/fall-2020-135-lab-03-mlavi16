@@ -1,7 +1,7 @@
 main: main.o reservoir.o reverseorder.o
 	g++ -o main main.o reservoir.o reverseorder.o
 
-main.o: main.cpp reservoir.h
+main.o: main.cpp reservoir.h reverseorder.h
 	g++ -c main.cpp
 
 reservoir.o: reservoir.cpp reservoir.h
@@ -17,4 +17,3 @@ help:
 	@echo Targets:
 	@echo " main"
 	@echo " clean"
-
