@@ -28,7 +28,7 @@ double get_east_storage(std::string entered_date) {
     }
   }
   fin.close();
-  std::cout << "Invalid date. Please enter 'MM/DD/2018'." << std::endl;
+  std::cout << "Invalid date. Please enter \"MM/DD/2018\"." << std::endl;
   return 0;
 }
 
